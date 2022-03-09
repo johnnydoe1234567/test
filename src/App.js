@@ -18,7 +18,7 @@ const walletConnect = walletConnectModule();
 const walletLink = walletLinkModule();
 
 const onboard = Onboard({
-  wallets: [walletLink, walletConnect, injected],
+  wallets: [injected, walletLink, walletConnect],
   chains: [
     {
       id: "0x1", // chain ID must be in hexadecimel
